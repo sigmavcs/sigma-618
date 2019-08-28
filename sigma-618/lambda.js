@@ -1,4 +1,5 @@
 exports.handler = function(event, context, callback) {
     
-    callback(null, {"message": "Successfully executed!!"});
+    // const var = event.var;
+    callback(null, {"message": "Successfully executed!!);
 }
