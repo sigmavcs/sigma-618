@@ -22,7 +22,7 @@
         "children": [],
         "isRemovable": true,
         "filePath": "sigma-618/lambda.js",
-        "code": "exports.handler = function(event, context, callback) {\n    \n    // const var = event.var;\n    callback(null, {\"message\": \"Successfully executed!!);\n}",
+        "code": "exports.handler = function(event, context, callback) {\n    \n    callback(null, {\"message\": \"Successfully executed!!\"});\n}",
         "config": {
           "runtime": "nodejs8.10",
           "handler": "handler",
@@ -30,7 +30,12 @@
           "memory": 128,
           "layers": []
         },
-        "triggers": []
+        "triggers": [
+          {
+            "resourceName": "apigusEast1aaany",
+            "config": {}
+          }
+        ]
       }
     },
     "deletedFiles": [],
@@ -39,7 +44,27 @@
       "2f7af2f8-db69-4319-b4a6-3c4a54f54209"
     ],
     "currentFileId": "2f7af2f8-db69-4319-b4a6-3c4a54f54209",
-    "resources": {},
+    "resources": {
+      "apigusEast1aaany": {
+        "name": "apigusEast1aaany",
+        "type": "API_GATEWAY",
+        "config": {
+          "selectedRegion": "us-east-1",
+          "apiMode": 0,
+          "apiName": "a",
+          "endpointType": "EDGE",
+          "resourceMode": 0,
+          "resourceName": "a",
+          "resourcePath": "/a",
+          "restMethod": "ANY",
+          "proxyIntegration": false,
+          "enableCORS": false,
+          "stageMode": 0,
+          "stageName": "a",
+          "mode": 0
+        }
+      }
+    },
     "customTemplate": {
       "dialect": null,
       "definitions": null
@@ -64,7 +89,8 @@
     "projectVersion": "1.0.0",
     "projectRegion": "us-east-1",
     "platform": "AWS",
-    "platformRegions": {}
+    "platformRegions": {},
+    "lastSave": null
   },
   "VCS_STATE": {
     "provider": "GitHub",
